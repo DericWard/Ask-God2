@@ -56,7 +56,7 @@ function ContactForm() {
       );
   };
   return (
-    <Box sx={{ flexGrow: 1, m: 2 }}>
+    <Box sx={{ flexGrow: 1, m: 1 }}>
       <Typography
         variant="h2"
         style={{

@@ -1,7 +1,9 @@
 import { Configuration, OpenAIApi } from 'openai';
-
+import Box from "@mui/material/Box";
+import { Typography } from '@mui/material';
 import FormSection from '../assets/components/FormSection/FormSection.jsx';
 import AnswerSection from '../assets/components/AnswerSection/AnswerSection.jsx';
+
 
 import { useState } from 'react';
 
@@ -47,19 +49,26 @@ const Ask = () => {
 };
 
   return (
+    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+    <Box sx={{ flexGrow: 1, m: 1, maxWidth: '200px' }}>
+      <div className='header-section'>
+        <Typography
+          variant="h2"
+          style={{
+            color: "lightblue",
+            textAlign: "center",
+            marginTop: "50px",
+            marginBottom: "10px",
+          }}
+        >ASK GOD!</Typography>
 
-    <div>
+        <FormSection  generateResponse={generateResponse} />
 
-        <div className='header-section'>
-          <h1>ASK GOD!</h1>
-        </div>
-
-      <FormSection generateResponse={generateResponse} />
-
-      <AnswerSection storedValues={storedValues} />
-
-    </div>
-  );
+        <AnswerSection storedValues={storedValues} />
+      </div>
+    </Box>
+  </Box>
+);
 };
 
 export default Ask;

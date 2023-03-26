@@ -77,7 +77,7 @@ function ContactForm() {
       <Typography
         variant="h2"
         style={{
-          color: "white",
+          color: "lightblue",
           textAlign: "center",
           marginTop: "50px",
           marginBottom: "20px",
@@ -100,9 +100,19 @@ function ContactForm() {
             color="secondary"
             variant="body2"
             component="p"
+            style={{
+              fontFamily: "arial",
+              color: "#54B5E6",
+            }}
           >
             email:{" "}
-            <a href="mailto:questions.askgod@gmail.com">
+            <a
+              href="mailto:questions.askgod@gmail.com"
+              style={{
+                fontFamily: "arial",
+                color: "#55B4E6",
+              }}
+            >
               questions.askgod@gmail.com
             </a>{" "}
             or simply fill out this form!
@@ -120,6 +130,7 @@ function ContactForm() {
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleInputChange}
+                  sx={{ "& .MuiInputLabel-root": { color: "#55B4E6" } }}
                 />
               </Grid>
               <Grid xs={12} sm={6} item>
@@ -132,6 +143,7 @@ function ContactForm() {
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleInputChange}
+                  sx={{ "& .MuiInputLabel-root": { color: "#55B4E6" } }}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -145,6 +157,7 @@ function ContactForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
+                  sx={{ "& .MuiInputLabel-root": { color: "#55B4E6" } }}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -158,6 +171,7 @@ function ContactForm() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
+                  sx={{ "& .MuiInputLabel-root": { color: "#55B4E6" } }}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -172,6 +186,7 @@ function ContactForm() {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
+                  sx={{ "& .MuiInputLabel-root": { color: "#55B4E6" } }}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -180,7 +195,7 @@ function ContactForm() {
                   variant="contained"
                   color="primary"
                   fullWidth
-                  sx={{ bgcolor: "rgba(0,20,50, 0.9)" }}
+                  sx={{ bgcolor: "#55B4E6" }}
                 >
                   Submit
                 </Button>

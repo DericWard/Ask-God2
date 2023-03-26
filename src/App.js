@@ -1,7 +1,11 @@
 
 import "./App.css";
-import ContactForm from "./assets/components/ContactForm";
 import Sound from "./assets/sound.wav";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ResponsiveAppBar from "./pages/Header";
+import Contact from "./pages/Contact"
+import  Home  from "./pages/Home";
+
 
 function App() {
   const playSound = () => {
@@ -10,12 +14,13 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <ContactForm />
-        <button onClick={playSound}>Play Sound</button>
-      </header>
-    </div>
+    <Router>
+    <ResponsiveAppBar />
+    <Routes>
+      <Route path="/home" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  </Router>
   );
 }
 

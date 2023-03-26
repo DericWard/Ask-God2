@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -102,12 +102,12 @@ function ContactForm() {
             component="p"
           >
             email:{" "}
-             <a href="mailto:questions.askgod@gmail.com">
+            <a href="mailto:questions.askgod@gmail.com">
               questions.askgod@gmail.com
             </a>{" "}
-         or simply fill out this form!
+            or simply fill out this form!
           </Typography>
-          <br/>
+          <br />
           <form onSubmit={handleSubmit}>
             <Grid container spacing={1}>
               <Grid xs={12} sm={6} item>

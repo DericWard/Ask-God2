@@ -2,6 +2,7 @@
 import ContactForm from "../assets/components/ContactForm/index.js";
 import Sound from "../assets/sound.wav";
 
+
 function Contact() {
   const playSound = () => {
     const audio = new Audio(Sound);

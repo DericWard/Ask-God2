@@ -1,4 +1,3 @@
-
 import Sound from "../assets/sound.wav";
 
 function Home() {

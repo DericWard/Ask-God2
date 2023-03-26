@@ -83,7 +83,7 @@ function ContactForm() {
           marginBottom: "20px",
         }}
       >
-        CONTACT
+        CONTACT GOD
       </Typography>
       <Card
         style={{
@@ -96,7 +96,7 @@ function ContactForm() {
       >
         <CardContent>
           <Typography gutterBottom variant="h5">
-            Contact The Divine
+            Reach The Divine
           </Typography>
           <Typography
             gutterBotom
@@ -104,10 +104,10 @@ function ContactForm() {
             variant="body2"
             component="p"
           >
-            Contact your chosen God(ess) at{" "}
-            <a href="mailto:questions.askgod@gmail.com">
+            email:{" "}
+             <a href="mailto:questions.askgod@gmail.com">
               questions.askgod@gmail.com
-            </a>{" "}
+            </a>
             , or simply fill out this form!
           </Typography>
           <form onSubmit={handleSubmit}>

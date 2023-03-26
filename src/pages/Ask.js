@@ -5,14 +5,9 @@ import AnswerSection from '../assets/components/AnswerSection/AnswerSection.jsx'
 
 import { useState } from 'react';
 
-// import './Ask.css';
-
-// const key = process.env.REACT_APP_OPENAI_API_KEY
-
 const Ask = () => {
   const configuration = new Configuration({
-    apiKey: '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',
-    // apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+    apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   });
 
   const openai = new OpenAIApi(configuration);

@@ -1,10 +1,6 @@
+/* eslint-disable */
 import { useState } from "react";
-import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-} from "@mui/material";
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function History() {
@@ -15,13 +11,13 @@ function History() {
 
   return (
     <div>
-      {storedValues.map((storedValue, index) => (
+      {storedValues.map(({ question, answer }, index) => (
         <Accordion key={index}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>{storedValue.question}</Typography>
+            <Typography>{question}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{storedValue.answer}</Typography>
+            <Typography>{answer}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}

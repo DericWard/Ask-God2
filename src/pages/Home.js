@@ -1,4 +1,4 @@
-import ContactForm from "../assets/components/ContactForm/index.js";
+
 import Sound from "../assets/sound.wav";
 
 function Home() {

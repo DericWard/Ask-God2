@@ -1,19 +1,28 @@
-import * as React from "react";
-import Sound from "../assets/sound.wav";
+/* eslint-disable */
+import { useState } from "react";
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function History() {
-  
-    const playSound = () => {
-        const audio = new Audio(Sound);
-        audio.play();
-      };
-    
-      return (
-        <div className="App">
-          <header className="App-header">
-            <button onClick={playSound}>TITLE PAGE HERE</button>
-          </header>
-        </div>
-      );
-    }
+  const [storedValues, setStoredValues] = useState(() => {
+    const stored = localStorage.getItem("storedValues");
+    return stored ? JSON.parse(stored) : [];
+  });
+
+  return (
+    <div>
+      {storedValues.map(({ question, answer }, index) => (
+        <Accordion key={index}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>{question}</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>{answer}</Typography>
+          </AccordionDetails>
+        </Accordion>
+      ))}
+    </div>
+  );
+}
+
 export default History;

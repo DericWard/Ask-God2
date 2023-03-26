@@ -95,9 +95,6 @@ function ContactForm() {
         }}
       >
         <CardContent>
-          <Typography gutterBottom variant="h5">
-            Reach The Divine
-          </Typography>
           <Typography
             gutterBotom
             color="secondary"
@@ -110,6 +107,7 @@ function ContactForm() {
             </a>
             , or simply fill out this form!
           </Typography>
+          <br/>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={1}>
               <Grid xs={12} sm={6} item>

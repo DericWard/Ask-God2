@@ -1,10 +1,9 @@
 import { Configuration, OpenAIApi } from 'openai';
 import Box from "@mui/material/Box";
 import { Typography } from '@mui/material';
-import CardContent from "@mui/material/CardContent";
 import FormSection from '../assets/components/FormSection/FormSection.jsx';
 import AnswerSection from '../assets/components/AnswerSection/AnswerSection.jsx';
-import Grid from "@mui/material/Grid";
+
 
 import { useState } from 'react';
 

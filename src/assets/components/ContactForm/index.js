@@ -104,8 +104,8 @@ function ContactForm() {
             email:{" "}
              <a href="mailto:questions.askgod@gmail.com">
               questions.askgod@gmail.com
-            </a>
-            , or simply fill out this form!
+            </a>{" "}
+         or simply fill out this form!
           </Typography>
           <br/>
           <form onSubmit={handleSubmit}>

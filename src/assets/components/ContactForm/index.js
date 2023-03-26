@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { TextField } from "@mui/material";
 import emailjs from "emailjs-com";
+import soundFile from "../../sound.wav";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,12 +19,24 @@ function ContactForm() {
     message: "",
   });
 
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    setAudio(new Audio(soundFile));
+  }, []);
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
+  };
+
+  const playSound = () => {
+    if (audio) {
+      audio.play();
+    }
   };
 
   const handleSubmit = (event) => {
@@ -50,6 +63,7 @@ function ContactForm() {
             phone: "",
             message: "",
           });
+          playSound();
         },
         (error) => {
           console.log("FAILED...", error);

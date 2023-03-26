@@ -17,6 +17,7 @@ function ContactForm() {
     phone: "",
     message: "",
   });
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevState) => ({
@@ -24,8 +25,10 @@ function ContactForm() {
       [name]: value,
     }));
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
     emailjs
       .send(
         "service_s2asnai",
@@ -47,7 +50,6 @@ function ContactForm() {
             phone: "",
             message: "",
           });
-    
         },
         (error) => {
           console.log("FAILED...", error);
@@ -55,6 +57,7 @@ function ContactForm() {
         }
       );
   };
+
   return (
     <Box sx={{ flexGrow: 1, m: 1 }}>
       <Typography

@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <button onClick={playSound}>This is a test sound</button>
+        <button onClick={playSound}>TITLE PAGE HERE</button>
       </header>
     </div>
   );

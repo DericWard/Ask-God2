@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./assets/images/Cartoon_Clouds.jpg");
   background-repeat: repeat-x;
-  background-size: auto 100%;
+  background-size: auto;
   animation-name: slide-left;
   animation-duration: 200s;
   animation-timing-function: linear;

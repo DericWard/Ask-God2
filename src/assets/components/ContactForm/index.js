@@ -76,13 +76,13 @@ function ContactForm() {
     <Box sx={{ flexGrow: 1, m: 1 }}>
       <Typography
         variant="h2"
-        style={{
+        sx={{
           color: "lightblue",
           textAlign: "center",
-          marginTop: "50px",
-          marginBottom: "20px",
+          marginTop: "0px",
+          marginBottom: "0px",
           fontFamily: "BigBlue",
-          fontSize: "256px"
+          fontSize: { xs: "20vw", sm: "15vw", md: "13vw" }
         }}
       >
         CONTACT GOD!

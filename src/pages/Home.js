@@ -15,14 +15,23 @@ function Home() {
 
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
-      <a href="/ask">
-      <div className='header-section AskGod'>
-          <div className="Ask omfg" style={{ fontSize: '380px', paddingTop: "0px" }}>ASK</div>
-          <div className="God omfg" style={{ fontSize: '380px', paddingTop: "0px" }}>GOD!</div>
+      <header className="App-header"></header>
+      <Link to="/ask" className='header-section AskGod'>
+        <div className="header-section AskGod">
+          <div
+            className="Ask omfg"
+            style={{ fontSize: "380px", paddingTop: "0px" }}
+          >
+            ASK
+          </div>
+          <div
+            className="God omfg"
+            style={{ fontSize: "380px", paddingTop: "0px" }}
+          >
+            GOD!
+          </div>
         </div>
-        </a>
+      </Link>
     </div>
   );
 }

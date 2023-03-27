@@ -1,7 +1,7 @@
-/* eslint-disable */
 import { useState } from "react";
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import DownloadPDF from "../assets/components/DownloadPDF";
 
 function History() {
   const [storedValues, setStoredValues] = useState(() => {
@@ -21,6 +21,7 @@ function History() {
           </AccordionDetails>
         </Accordion>
       ))}
+      <DownloadPDF data={storedValues} />
     </div>
   );
 }

@@ -9,8 +9,13 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <button onClick={playSound}>TITLE PAGE HERE</button>
+        {/* <button onClick={playSound}>TITLE PAGE HERE</button> */}
       </header>
+
+      <div className='header-section AskGod'>
+          <div className="Ask omfg" style={{ fontSize: '380px', paddingTop: "0px" }}>ASK</div>
+          <div className="God omfg" style={{ fontSize: '380px', paddingTop: "0px" }}>GOD!</div>
+        </div>
     </div>
   );
 }

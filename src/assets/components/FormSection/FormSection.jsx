@@ -29,7 +29,7 @@ const FormSection = ({ generateResponse }) => {
         }}
       >
         <textarea
-          rows="20"
+          rows="10"
           className="form-control"
           placeholder="Ask God anything..."
           style={{
@@ -39,7 +39,7 @@ const FormSection = ({ generateResponse }) => {
             paddingTop: "10px",
             fontSize: "20px",
             fontFamily: "tahoma",
-            width: "100%",
+            width: "30vw",
             backgroundColor: "transparent"
           }}
           value={newQuestion}
@@ -51,6 +51,7 @@ const FormSection = ({ generateResponse }) => {
 
         <Button
           className="btn"
+          style={{ fontSize: "18px"}}
           onClick={() => generateResponse(newQuestion, setNewQuestion)}
         >
           Ask Now

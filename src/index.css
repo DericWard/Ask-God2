@@ -25,16 +25,18 @@ body {
 }
 
 .omfg {
+  display: flex;
   font-family: 'BigBlue';
   color: darkgrey;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 380px;
 }
 
 .AskGod {
   position: relative;
-  height: 100vh;
+  height: 80vh;
 }
 
 .Ask {
@@ -71,7 +73,7 @@ body {
     opacity: 0;
   }
   100% {
-    top: 55%;
+    top: 65%;
     opacity: 1;
   }
 }
@@ -84,3 +86,10 @@ body {
     background-position: 100% 50px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .mobile-font-size {
+    font-size: 180px;
+  }
+}
+

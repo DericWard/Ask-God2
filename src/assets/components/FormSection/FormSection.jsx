@@ -23,8 +23,9 @@ const FormSection = ({ generateResponse }) => {
           backgroundColor: "#fff",
           borderRadius: "10px",
           padding: "20px",
-          boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.3)",
+          color: "#2d7cb2",
           width: "400px",
+          backgroundColor: "transparent",
         }}
       >
         <textarea
@@ -36,8 +37,10 @@ const FormSection = ({ generateResponse }) => {
             verticalAlign: "middle",
             borderRadius: "10px",
             paddingTop: "10px",
+            fontSize: "20px",
             fontFamily: "tahoma",
             width: "100%",
+            backgroundColor: "transparent"
           }}
           value={newQuestion}
           onChange={(event) => setNewQuestion(event.target.value)}

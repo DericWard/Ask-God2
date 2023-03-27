@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Sound from "../assets/sound.wav";
 
 function Home() {

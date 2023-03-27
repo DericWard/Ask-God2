@@ -6,8 +6,6 @@ import Contact from "./pages/Contact";
 import Ask from "./pages/Ask.js";
 import History from "./pages/History";
 import GetQuote from "./assets/components/getQuote/getQuote";
-// import axios from 'axios';
-// import { useState } from "react";
 
 
 function App() {

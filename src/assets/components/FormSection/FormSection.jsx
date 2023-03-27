@@ -28,7 +28,7 @@ const FormSection = ({ generateResponse }) => {
         }}
       >
         <textarea
-          rows="10"
+          rows="20"
           className="form-control"
           placeholder="Ask God anything..."
           style={{

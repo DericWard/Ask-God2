@@ -81,9 +81,11 @@ function ContactForm() {
           textAlign: "center",
           marginTop: "50px",
           marginBottom: "20px",
+          fontFamily: "BigBlue",
+          fontSize: "256px"
         }}
       >
-        CONTACT GOD
+        CONTACT GOD!
       </Typography>
       <Card
         style={{

@@ -64,13 +64,15 @@ const Ask = () => {
           <Typography
             variant="h2"
             style={{
-              color: "lightblue",
+              color: "red",
               textAlign: "center",
-              marginTop: "50px",
-              marginBottom: "10px",
+              marginTop: "100px",
+              marginBottom: "0px",
+              // fontFamily: "BigBlue",
+              // fontSize: "256px"
             }}
           >
-            ASK GOD!
+            {/* ASK GOD */}
           </Typography>
 
           <FormSection generateResponse={generateResponse} />

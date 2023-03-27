@@ -3,6 +3,7 @@ body {
   height: 100%;
 }
 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -17,6 +18,89 @@ body {
   animation-duration: 200s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+
+@font-face {
+  font-family: 'BigBlue';
+  src: url('./assets/fonts/BigParty4Blue-0f5b.woff2') format('woff2');
+}
+
+.omfg {
+  font-family: 'BigBlue';
+  color: darkgrey;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* .AskGod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Ask {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: drop-ask 1.25s ease forwards;
+}
+
+.God {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: drop-god 2s ease forwards;
+} */
+
+
+.AskGod {
+  position: relative;
+  height: 100vh;
+}
+
+.Ask {
+  position: absolute;
+  top: 25%;
+  /* top: calc(50% - 15%); */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: drop-ask 1.25s ease forwards;
+}
+
+.God {
+  position: absolute;
+  top: 75%;
+  /* top: calc(50% + 15%);  */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: drop-god 2s ease forwards;
+} 
+
+@keyframes drop-ask {
+  0% {
+    top: -50%;
+    opacity: 0;
+  }
+  100% {
+    top: 30%;
+    opacity: 1;
+  }
+}
+
+@keyframes drop-god {
+  0% {
+    top: -50%;
+    opacity: 0;
+  }
+  100% {
+    top: 55%;
+    opacity: 1;
+  }
 }
 
 @keyframes slide-left {

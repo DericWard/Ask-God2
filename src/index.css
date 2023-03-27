@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/images/cartoon_clouds.png");
+  background-image: url("./assets/images/Cartoon_Clouds.jpg");
   background-repeat: repeat-x;
   background-size: auto 100%;
   animation-name: slide-left;
@@ -24,6 +24,6 @@ body {
     background-position: 0 50px;
   }
   100% {
-    background-position: -6000px 0;
+    background-position: 100% 50px;
   }
 }

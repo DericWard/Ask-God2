@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/images/cartoon_clouds.png");
+  background-image: url("./assets/images/Cartoon_Clouds.jpg");
   background-repeat: repeat-x;
   background-size: auto 100%;
   animation-name: slide-left;
@@ -19,11 +19,71 @@ body {
   animation-iteration-count: infinite;
 }
 
+@font-face {
+  font-family: 'BigBlue';
+  src: url('./assets/fonts/BigParty4Blue-0f5b.woff2') format('woff2');
+}
+
+.omfg {
+  font-family: 'BigBlue';
+  color: darkgrey;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.AskGod {
+  position: relative;
+  height: 100vh;
+}
+
+.Ask {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  animation: drop-ask 1.25s ease forwards;
+}
+
+.God {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  animation: drop-god 2s ease forwards;
+}
+
+.answer {
+  color: darkslategray;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes drop-ask {
+  0% {
+    top: -50%;
+    opacity: 0;
+  }
+  100% {
+    top: 30%;
+    opacity: 1;
+  }
+}
+
+@keyframes drop-god {
+  0% {
+    top: -50%;
+    opacity: 0;
+  }
+  100% {
+    top: 55%;
+    opacity: 1;
+  }
+}
+
 @keyframes slide-left {
   0% {
     background-position: 0 50px;
   }
   100% {
-    background-position: -6000px 0;
+    background-position: 100% 50px;
   }
 }

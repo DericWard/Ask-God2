@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "Contact", "Ask", "History"];
+const pages = ["Home", "Contact", "History"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -73,7 +73,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" },  justifyContent: "center" }} >
             {pages.map((page) => (
               <Button
                 key={page}

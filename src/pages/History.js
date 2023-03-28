@@ -17,7 +17,7 @@ function History() {
   });
 
   return (
-    <Box sx={{ flexGrow: 1, m: 20, marginTop: "100px"}}>
+    <Box sx={{ flexGrow: 1, m: 10, marginTop: "50px", maxWidth: "60%", margin: "auto"}}>
     <div>
       {storedValues.map(({ question, answer }, index) => (
         <Accordion key={index}>
@@ -28,6 +28,7 @@ function History() {
             <Typography>{answer}</Typography>
           </AccordionDetails>
         </Accordion>
+        
       ))}
       <DownloadPDF data={storedValues} />
     </div>

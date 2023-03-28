@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DownloadPDF from "../assets/components/DownloadPDF";
+import Box from "@mui/material/Box";
 
 function History() {
   const [storedValues, setStoredValues] = useState(() => {
@@ -16,6 +17,7 @@ function History() {
   });
 
   return (
+    <Box sx={{ flexGrow: 1, m: 20, marginTop: "100px"}}>
     <div>
       {storedValues.map(({ question, answer }, index) => (
         <Accordion key={index}>
@@ -29,6 +31,7 @@ function History() {
       ))}
       <DownloadPDF data={storedValues} />
     </div>
+    </Box>
   );
 }
 

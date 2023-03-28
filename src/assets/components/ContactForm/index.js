@@ -79,10 +79,10 @@ function ContactForm() {
         style={{
           color: "lightblue",
           textAlign: "center",
-          marginTop: "50px",
+          marginTop: "0px",
           marginBottom: "20px",
           fontFamily: "BigBlue",
-          fontSize: "256px"
+          fontSize: "18vw"
         }}
       >
         CONTACT GOD!

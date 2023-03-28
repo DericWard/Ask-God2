@@ -7,9 +7,10 @@ function DownloadPDF({ data }) {
     const doc = new jsPDF();
 
     data.forEach(({ question, answer }, index) => {
-      doc.text(`${index + 1}. ${question}`, 10, 10 + index * 20);
-      doc.text(answer, 20, 15 + index * 20);
+      doc.text(`${index + 1}. ${question}`, 10, 10 + index * 30);
+      doc.text(answer, 20, 15 + index * 30);
     });
+    
 
     doc.save("history.pdf");
   };

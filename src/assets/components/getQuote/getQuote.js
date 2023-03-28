@@ -15,7 +15,7 @@ function GetQuote(){
             axios.get('https://api.quotable.io/random?author=albert-einstein')
 
             .then((response) => {
-            setQuote(`${response.data.content} - ${response.data.author}`)
+            setQuote(`${response.data.content}`)
         })
             .catch((error) => {
             console.log(error);
@@ -30,6 +30,7 @@ function GetQuote(){
             display: 'flex', 
             textAlign: 'center',
             justifyContent: 'center',
+            alignItems: 'end',
         }}> 
             <Paper elevation={5}>
                 <Typography 

@@ -2,6 +2,7 @@ import { Configuration, OpenAIApi } from "openai";
 import Box from "@mui/material/Box";
 import FormSection from "../assets/components/FormSection/FormSection.jsx";
 import AnswerSection from "../assets/components/AnswerSection/AnswerSection.jsx";
+import GetQuote from "../assets/components/getQuote/getQuote.js";
 import { useState, useEffect } from "react";
 
 const Ask = () => {
@@ -66,6 +67,7 @@ const Ask = () => {
 
           <AnswerSection storedValues={storedValues} />
         </div>
+          <GetQuote />
       </Box>
     </Box>
   );

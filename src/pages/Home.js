@@ -2,6 +2,7 @@
 import Sound from "../assets/sound.wav";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Box } from "@mui/material";
 
 function Home() {
   const playSound = () => {

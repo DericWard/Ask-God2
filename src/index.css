@@ -35,6 +35,7 @@ body {
 .AskGod {
   position: relative;
   height: 100vh;
+  font-size: 1vw;
 }
 
 .Ask {

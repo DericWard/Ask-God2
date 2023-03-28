@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Ask from "./pages/Ask.js";
 import History from "./pages/History";
-import GetQuote from "./assets/components/getQuote/getQuote";
 
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="/ask" element={<Ask />} />
         <Route path="/history" element={<History />} />
       </Routes>
-      <GetQuote />
     </Router>
   );
 }

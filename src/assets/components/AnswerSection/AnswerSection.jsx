@@ -1,4 +1,4 @@
-import { Style } from "@mui/icons-material";
+/* eslint-disable */
 import { Card, CardContent, Typography, Box } from "@mui/material";
 
 const AnswerSection = ({ storedValues }) => {

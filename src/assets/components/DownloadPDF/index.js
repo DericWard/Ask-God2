@@ -15,9 +15,12 @@ function DownloadPDF({ data }) {
   };
 
   return (
-    <Button variant="contained" onClick={generatePDF}>
-      Download PDF
-    </Button>
+    <div style={{ display: "flex", justifyContent: "center", paddingTop: "30vh" }}>
+      <Button variant="contained" onClick={generatePDF}>
+        Download Your Chats with God!
+      </Button>
+    </div>
+
   );
 }
 

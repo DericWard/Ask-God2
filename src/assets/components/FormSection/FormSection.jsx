@@ -40,7 +40,8 @@ const FormSection = ({ generateResponse }) => {
             fontSize: "20px",
             fontFamily: "tahoma",
             width: "30vw",
-            backgroundColor: "transparent"
+            backgroundColor: "transparent",
+            color: "#2d7cb2"
           }}
           value={newQuestion}
           onChange={(event) => setNewQuestion(event.target.value)}
@@ -51,10 +52,10 @@ const FormSection = ({ generateResponse }) => {
 
         <Button
           className="btn"
-          style={{ fontSize: "18px"}}
+          style={{ fontSize: "18px", color: "lightgray",  backgroundColor: "#2d7cb2", marginTop: "30px" }}
           onClick={() => generateResponse(newQuestion, setNewQuestion)}
         >
-          Ask Now
+          Ask Now!
         </Button>
       </div>
     </div>

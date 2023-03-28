@@ -39,20 +39,23 @@ body {
 
 .Ask {
   position: absolute;
-  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
   animation: drop-ask 1.25s ease forwards;
-  margin-bottom: 500px;
 }
 
 .God {
   position: absolute;
-  top: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   animation: drop-god 2s ease forwards;
-} 
+}
+
+.answer {
+  color: darkslategray;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 @keyframes drop-ask {
   0% {

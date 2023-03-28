@@ -95,6 +95,8 @@ function ContactForm() {
           justifyContent: "center",
           textAlign: "center",
           backgroundColor: "transparent",
+          boxShadow: "none",
+          marginTop: "-50px"
         }}
       >
         <CardContent>

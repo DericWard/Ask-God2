@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+#Ask God
+Ask God is a React app that integrates OpenAI API, and Quotable.io API to provide a user-friendly and interactive platform for individuals to connect with an AI chatbot. By using Ask God, you can access the wealth of knowledge and expertise that ChatGPT has to offer, and receive intelligent and insightful answers to your questions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##User Story
+As a user, I want to be able to engage in a personalized conversation with an AI-powered chatbot, so that I can receive relevant and informative responses to my inquiries.
 
-## Available Scripts
+To get started, simply enter your query in the provided text box, and let the app do the rest. The chatbot will process your input and generate a relevant and informative response based on its advanced language understanding capabilities. With Ask God, you can engage in meaningful conversations with ChatGPT on any topic, and while you wait for this wisdom to generate, random quotes from worthy people will appear on the search screen for your entertainment and enlightenment.
 
-In the project directory, you can run:
+The app's intuitive interface makes it easy to navigate and use, while its robust features ensure that you get the most out of your chatbot experience. Whether you're seeking information, advice, or just some interesting conversation, put your faith in Ask God. [Something about local storage here...]
 
-### `npm start`
+##Features
+Search field, local storage for responses, and abilty to download responses as a pdf, contact form
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##Tools
+Node.js, React.js, npm.js, Axios,  MUI, FileServer.js, Email.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##View Project
 
-### `npm test`
+[include video link here]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##Future Development Plans
+[....]
 
-### `npm run build`
+##Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+API - OpenAI, Quotable.io
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Other Tools - FontSpace, Puppeteer, Adobe Illustrator, Photoshop
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Installation
+To install and run the app locally, follow these steps:
 
-### `npm run eject`
+Clone the repository from GitHub: git clone https://github.com/DericWard/Ask-God2/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Navigate to the project directory: cd Ask-God2
+Install dependencies: npm install
+Start the app: npm start
+Open http://localhost:3000 in your browser to view the app.
+Note: You will need to have Node.js and npm installed on your machine to run this app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##Usage
+Once the app is running, you can ask "God" anything by typing your queries into the input field and pressing the "Ask Now!" button. The app will generate an answer using ChatGPT, which will be displayed on the screen. While users are waiting for "God" to generate their response, worthy quotes from notable people will appear spontaneously onscreen.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+What's more, users can store their chosen dialogues with "God" and download them via the "History" tab in the main menu.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Finally, if users have comments, criticisms or suggestions on how "God" might improve, the app features a contact form for just this purpose.
 
-## Learn More
+##Contributing
+If you would like to contribute to Ask God, please follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Fork the repository.
+Create a new branch for your changes: git checkout -b my-new-branch
+Make your changes and commit them: git commit -m "Add some feature"
+Push to the branch: git push origin my-new-branch
+Create a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##Credits
+Ask God was created by The Four Horsemen of the Ai-apocalypse: Andrea Gates, Henry Green, Marta Milewczyk and Deric Ward.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##License
+Ask God is licensed under the [.....].

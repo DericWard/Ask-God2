@@ -17,7 +17,7 @@ function History() {
   });
 
   return (
-    <Box sx={{ flexGrow: 1, m: 20 }}>
+    <Box sx={{ flexGrow: 1, m: 20, marginTop: "100px"}}>
     <div>
       {storedValues.map(({ question, answer }, index) => (
         <Accordion key={index}>

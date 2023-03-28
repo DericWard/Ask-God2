@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Card, CardContent, Typography, Box } from "@mui/material";
 
 const AnswerSection = ({ storedValues }) => {
@@ -7,7 +8,7 @@ const AnswerSection = ({ storedValues }) => {
         {storedValues.map((value, index) => {
           return (
             <Box sx={{ display: "flex", justifyContent: "center"}}>
-              <Card key={index} sx={{ flexGrow: 1, m: 1, minWidth: "300px", backgroundColor: "transparent"  }}>
+              <Card key={index} sx={{ flexGrow: 1, m: 1, minWidth: "300px", backgroundColor: "transparent", color: "grey"}}>
                 <CardContent>
                   <Typography variant="body2" component="p">
                     {value.question}

@@ -7,25 +7,22 @@ function DownloadPDF({ data }) {
     const doc = new jsPDF();
 
     let y = 10;
-    const formattedData = data.map(({ question, answer }, index) => {
-      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 150);
-      const answerLines = doc.splitTextToSize(answer, 150);
+    data.forEach(({ question, answer }, index) => {
+      if (index === 1) {
+        y += 10; // Add extra space after first question
+        doc.line(10, y, 200, y); // Draw horizontal line
+        y += 10; // Add extra space after line
+      }
+      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 180);
+      const answerLines = doc.splitTextToSize(answer, 180);
       const lines = Math.max(questionLines.length, answerLines.length);
-      const formattedLines = [];
       for (let i = 0; i < lines; i++) {
         const questionLine = questionLines[i] || '';
         const answerLine = answerLines[i] || '';
-        formattedLines.push({ questionLine, answerLine });
-      }
-      return formattedLines;
-    });
-
-    formattedData.forEach(lines => {
-      lines.forEach(({ questionLine, answerLine }) => {
         doc.text(questionLine, 10, y);
         doc.text(answerLine, 20, y + 5);
         y += 10;
-      });
+      }
     });
 
     doc.save("history.pdf");

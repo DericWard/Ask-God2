@@ -35,7 +35,7 @@ function History() {
       </Typography>
     <div>
       {storedValues.map(({ question, answer }, index) => (
-        <Accordion key={index} >
+        <Accordion key={index} sx={{ backgroundColor: "#66000000",marginTop: "10px", marginBottom: "10px" }} >
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>{question}</Typography>
           </AccordionSummary>

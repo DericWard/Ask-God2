@@ -6,6 +6,8 @@ import AnswerSection from "../assets/components/AnswerSection/AnswerSection.jsx"
 import GetQuote from "../assets/components/getQuote/getQuote.js";
 import { useState, useEffect } from "react";
 
+
+//retreive API
 const Ask = () => {
   const configuration = new Configuration({
     apiKey: process.env.REACT_APP_OPENAI_API_KEY,
@@ -15,6 +17,7 @@ const Ask = () => {
 
   const [storedValues, setStoredValues] = useState([]);
 
+  // Retrieve storedValues from local storage
   useEffect(() => {
     const storedValues = JSON.parse(
       localStorage.getItem("storedValues") || "[]"
@@ -40,7 +43,7 @@ const Ask = () => {
 
     const response = await openai.createCompletion(completeOptions);
 
-    console.log(response.data.choices[0].text);
+    //console.log(response.data.choices[0].text);
 
     if (response.data.choices) {
       const newStoredValues = [
@@ -51,8 +54,8 @@ const Ask = () => {
         ...storedValues,
       ];
 
-      setStoredValues(newStoredValues);
-      setNewQuestion("");
+      setStoredValues(newStoredValues); // Update the state with the new stored values
+      setNewQuestion(""); // Clear the new question input field
 
       localStorage.setItem("storedValues", JSON.stringify(newStoredValues));
     }

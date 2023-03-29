@@ -16,6 +16,14 @@ function DownloadPDF({ data }) {
       const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 180);
       const answerLines = doc.splitTextToSize(answer, 180);
       const lines = Math.max(questionLines.length, answerLines.length);
+      
+      // Check if current content exceeds current page height
+      const pageHeight = doc.internal.pageSize.getHeight();
+      if (y + lines * 10 > pageHeight) {
+        doc.addPage();
+        y = 10;
+      }
+
       for (let i = 0; i < lines; i++) {
         const questionLine = questionLines[i] || '';
         const answerLine = answerLines[i] || '';

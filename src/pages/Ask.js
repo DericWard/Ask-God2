@@ -60,35 +60,32 @@ const Ask = () => {
 
   return (
     <>
-    <Typography className="omfg"
-    variant="h2"
-    style={{
-      color: "lightblue",
-      textAlign: "center",
-      // marginTop: "-70px",
-      marginBottom: "0px",
-      fontFamily: "BigBlue",
-      fontSize: "18vw",
-    }}
-  >
-    Ask God!
-  </Typography>
+      <Typography
+        className="omfg"
+        variant="h2"
+        style={{
+          color: "lightblue",
+          textAlign: "center",
+          // marginTop: "-70px",
+          marginBottom: "0px",
+          fontFamily: "BigBlue",
+          fontSize: "18vw",
+        }}
+      >
+        Ask God!
+      </Typography>
 
-  
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Box sx={{ flexGrow: 1, m: 10, maxWidth: "60vw", paddingTop: "0px" }}>
-        <div className="header-section">
-          
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Box sx={{ flexGrow: 1, m: 10, maxWidth: "60vw", paddingTop: "0px" }}>
+          <div className="header-section">
+            <FormSection generateResponse={generateResponse} />
 
-          <FormSection generateResponse={generateResponse} />
-
-          <AnswerSection storedValues={storedValues} />
-        </div>
+            <AnswerSection storedValues={storedValues} />
+          </div>
           <GetQuote />
+        </Box>
       </Box>
-    </Box>
     </>
-    
   );
 };
 

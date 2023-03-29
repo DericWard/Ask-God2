@@ -17,7 +17,7 @@ function DownloadPDF({ data }) {
 
   return (
     <div style={{ display: "flex", justifyContent: "center", paddingTop: "30vh" }}>
-      <Button variant="contained" onClick={generatePDF}>
+      <Button variant="contained" onClick={generatePDF} sx={{backgroundColor: "#2d7cb2",}}>
         Download Your Chats with God!
       </Button>
     </div>

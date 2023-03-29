@@ -32,7 +32,7 @@ const FormSection = ({ generateResponse }) => {
       >
         <textarea
           rows="10"
-          className="form-control"
+          className="form-control asktext"
           placeholder="Ask God anything..."
           style={{
             textAlign: "center",
@@ -67,3 +67,5 @@ const FormSection = ({ generateResponse }) => {
 };
 
 export default FormSection;
+
+

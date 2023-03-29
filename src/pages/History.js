@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { useState } from "react";
 import {
   Accordion,
@@ -11,12 +10,14 @@ import DownloadPDF from "../assets/components/DownloadPDF";
 import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 
+//using useState to retrieve stored searches
 function History() {
   const [storedValues, setStoredValues] = useState(() => {
     const stored = localStorage.getItem("storedValues");
     return stored ? JSON.parse(stored) : [];
   });
 
+  //clear button function
   const handleClearClick = () => {
     localStorage.removeItem("storedValues");
     setStoredValues([]);
@@ -53,6 +54,11 @@ function History() {
             justifyContent: "space-between",
             alignItems: "center",
             marginBottom: "10px",
+            // add media query to add gap between buttons on mobile mode
+            "@media (max-width: 600px)": {
+              flexDirection: "column",
+              gap: "10px",
+            },
           }}
         >
           <Box sx={{ minHeight: "48px" }}>
@@ -79,6 +85,7 @@ function History() {
               backgroundColor: "#66000000",
               marginTop: "10px",
               marginBottom: "10px",
+              color: "#2D7CB2",
             }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>

@@ -13,16 +13,27 @@ function DownloadPDF({ data }) {
         doc.line(10, y, 200, y); // Draw horizontal line
         y += 10; // Add extra space after line
       }
-      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 180);
+      const questionLines = doc.splitTextToSize(
+        `${index + 1}. ${question}`,
+        180
+      );
       const answerLines = doc.splitTextToSize(answer, 180);
       const lines = Math.max(questionLines.length, answerLines.length);
+
+      // Add loop to check if current content exceeds current page height
+      let currentY = y;
       for (let i = 0; i < lines; i++) {
-        const questionLine = questionLines[i] || '';
-        const answerLine = answerLines[i] || '';
-        doc.text(questionLine, 10, y);
-        doc.text(answerLine, 20, y + 5);
-        y += 10;
+        const questionLine = questionLines[i] || "";
+        const answerLine = answerLines[i] || "";
+        if (currentY + 10 > doc.internal.pageSize.getHeight()) {
+          doc.addPage();
+          currentY = 10;
+        }
+        doc.text(questionLine, 10, currentY);
+        doc.text(answerLine, 20, currentY + 5);
+        currentY += 10;
       }
+      y = currentY;
     });
 
     doc.save("history.pdf");

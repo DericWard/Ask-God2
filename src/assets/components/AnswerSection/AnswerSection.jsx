@@ -20,8 +20,11 @@ const AnswerSection = ({ storedValues }) => {
             key={index}
             sx={{ marginTop: "10px", marginBottom: "10px", width: "50vw", backgroundColor: "#66000000" }}
           >
-            <AccordionSummary sx={{marginTop: "20px"}}
+
               // Define the expand icon as ExpandMoreIcon
+
+            <AccordionSummary sx={{marginTop: "20px", color: "#2D7CB2"}}
+
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`panel${index}-content`}
               id={`panel${index}-header`}

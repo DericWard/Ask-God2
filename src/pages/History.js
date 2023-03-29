@@ -10,6 +10,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DownloadPDF from "../assets/components/DownloadPDF";
 import Box from "@mui/material/Box";
 
+
 function History() {
   const [storedValues, setStoredValues] = useState(() => {
     const stored = localStorage.getItem("storedValues");
@@ -17,17 +18,32 @@ function History() {
   });
 
   return (
-    <Box sx={{ flexGrow: 1, m: 20, marginTop: "100px"}}>
+
+    <Box sx={{ flexGrow: 1, m: 10, marginTop: "50px", maxWidth: "60%", margin: "auto"}}>
+            <Typography className="omfg"
+        variant="h2"
+        style={{
+          color: "lightblue",
+          textAlign: "center",
+          marginTop: "-50px",
+          marginBottom: "0px",
+          fontFamily: "BigBlue",
+          fontSize: "17vw",
+        }}
+      >
+        Save God!
+      </Typography>
     <div>
       {storedValues.map(({ question, answer }, index) => (
-        <Accordion key={index}>
+        <Accordion key={index} sx={{ backgroundColor: "#66000000",marginTop: "10px", marginBottom: "10px" }} >
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>{question}</Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails >
             <Typography>{answer}</Typography>
           </AccordionDetails>
         </Accordion>
+        
       ))}
       <DownloadPDF data={storedValues} />
     </div>

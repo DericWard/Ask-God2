@@ -1,44 +1,55 @@
 /* eslint-disable */
-import axios from 'axios';
+import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { Box, Paper, Typography } from '@mui/material';
-
+import { Box, Paper, Typography } from "@mui/material";
 
 // API call component for random quotes
 
-function GetQuote(){
-    const [quote, setQuote] = useState('');
-    
-    useEffect(() => {
-        const interval = setInterval(() => {
+function GetQuote() {
+  const [quote, setQuote] = useState("");
 
-            axios.get('https://api.quotable.io/random?author=albert-einstein')
+  useEffect(() => {
+    const interval = setInterval(() => {
+      axios
+        .get("https://api.quotable.io/random?author=albert-einstein")
 
-            .then((response) => {
-            setQuote(`${response.data.content} - ${response.data.author}`)
+        .then((response) => {
+          setQuote(`${response.data.content}`);
         })
-            .catch((error) => {
-            console.log(error);
-        })
-        }, 10000);
+        .catch((error) => {
+          console.log(error);
+        });
+    }, 10000);
 
-        return () => clearInterval(interval)
-    }, [])
+    return () => clearInterval(interval);
+  }, []);
 
-    return (
-        <Box sx={{
-            display: 'flex', 
-            textAlign: 'center',
-            justifyContent: 'center',
-        }}> 
-            <Paper elevation={5}>
-                <Typography 
-                    sx={{fontSize: 20}}
-                    variant='h3'
-                    >{quote}</Typography>
-            </Paper>
-        </Box>
-    )
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        width: "60vw",
+        marginTop: "200px",
+        // opacity: "0.5"
+      }}
+    >
+      <Paper sx={{ backgroundColor: "#66000000", boxShadow: "none" }}>
+        <Typography
+          sx={{
+            fontSize: 20,
+            textAlign: "center",
+            color: "#155178",
+            fontStyle: "italic",
+          }}
+          variant="h3"
+        >
+          {quote}
+        </Typography>
+      </Paper>
+    </Box>
+  );
 }
 
 export default GetQuote;

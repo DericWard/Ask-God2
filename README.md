@@ -14,7 +14,7 @@ The app's intuitive interface makes it easy to navigate and use, while its robus
   - [Screenshots](#screenshot)
   - [Tools](#tools)
   - [View](#view)
-  - [Future Development Plans](#futuredevelopmentplans)
+  - [Future Development Plans](#future-development-plans)
   - [Credits](#credits)
   - [Installation](#installation)
   - [Usage](#usage)

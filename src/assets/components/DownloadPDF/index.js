@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@mui/material";
+import  Button  from "@mui/material/Button";
 import { jsPDF } from "jspdf";
 
 function DownloadPDF({ data }) {
@@ -16,7 +16,7 @@ function DownloadPDF({ data }) {
   };
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", paddingTop: "30vh" }}>
+    <div style={{ display: "flex", justifyContent: "center"}}>
       <Button variant="contained" onClick={generatePDF} sx={{backgroundColor: "#2d7cb2",}}>
         Download Your Chats with God!
       </Button>

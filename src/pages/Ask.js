@@ -4,6 +4,7 @@ import FormSection from "../assets/components/FormSection/FormSection.jsx";
 import AnswerSection from "../assets/components/AnswerSection/AnswerSection.jsx";
 import GetQuote from "../assets/components/getQuote/getQuote.js";
 import { useState, useEffect } from "react";
+import Footer from "../assets/components/Footer/Footer.jsx"
 
 const Ask = () => {
   const configuration = new Configuration({
@@ -61,14 +62,18 @@ const Ask = () => {
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box sx={{ flexGrow: 1, m: 1, maxWidth: "200px", paddingTop: "70px" }}>
         <div className="header-section">
-          
 
           <FormSection generateResponse={generateResponse} />
 
           <AnswerSection storedValues={storedValues} />
         </div>
+        <div  className="Footer">
+        <Footer>
           <GetQuote />
+          </Footer>
+        </div>
       </Box>
+
     </Box>
   );
 };

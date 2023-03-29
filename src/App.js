@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Ask from "./pages/Ask.js";
 import History from "./pages/History";
+import Footer from "../src/assets/components/Footer/Footer.jsx"
 
 
 function App() {

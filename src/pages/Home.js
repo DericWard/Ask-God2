@@ -20,13 +20,13 @@ function Home() {
         <div className="header-section AskGod">
           <div
             className="Ask omfg"
-            style={{ fontSize: "380px", paddingTop: "0px" }}
+            // style={{ fontSize: "380px", paddingTop: "0px" }}
           >
             ASK
           </div>
           <div
             className="God omfg"
-            style={{ fontSize: "380px", paddingTop: "0px" }}
+            // style={{ fontSize: "380px", paddingTop: "0px" }}
           >
             GOD!
           </div>

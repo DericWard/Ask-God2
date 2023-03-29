@@ -31,10 +31,11 @@ function GetQuote(){
             textAlign: 'center',
             justifyContent: 'center',
             alignItems: 'end',
+            backgroundColor: 'transparent'
         }}> 
             <Paper elevation={5}>
                 <Typography 
-                    sx={{fontSize: 20}}
+                    sx={{fontSize: 20, color: "red", backgroundColor: "transparent"}}
                     variant='h3'
                     >{quote}</Typography>
             </Paper>

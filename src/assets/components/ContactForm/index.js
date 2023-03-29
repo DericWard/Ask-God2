@@ -137,7 +137,6 @@ function ContactForm() {
                   value={formData.firstName}
                   onChange={handleInputChange}
                   sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" }, 
-                  // backgroundColor: "#FFFFFF",
                 }}
                 />
               </Grid>
@@ -152,7 +151,6 @@ function ContactForm() {
                   value={formData.lastName}
                   onChange={handleInputChange}
                   sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
                 }}
                 />
               </Grid>
@@ -168,7 +166,6 @@ function ContactForm() {
                   value={formData.email}
                   onChange={handleInputChange}
                   sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
                 }}
                 />
               </Grid>
@@ -184,7 +181,6 @@ function ContactForm() {
                   value={formData.subject}
                   onChange={handleInputChange}
                   sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
                 }}
                 />
               </Grid>
@@ -201,7 +197,6 @@ function ContactForm() {
                   value={formData.message}
                   onChange={handleInputChange}
                   sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
                 }}
                 />
               </Grid>

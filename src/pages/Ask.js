@@ -1,5 +1,6 @@
 import { Configuration, OpenAIApi } from "openai";
 import Box from "@mui/material/Box";
+import { Typography } from "@mui/material";
 import FormSection from "../assets/components/FormSection/FormSection.jsx";
 import AnswerSection from "../assets/components/AnswerSection/AnswerSection.jsx";
 import GetQuote from "../assets/components/getQuote/getQuote.js";
@@ -58,6 +59,22 @@ const Ask = () => {
   };
 
   return (
+    <>
+    <Typography className="omfg"
+    variant="h2"
+    style={{
+      color: "lightblue",
+      textAlign: "center",
+      marginTop: "-50px",
+      marginBottom: "0px",
+      fontFamily: "BigBlue",
+      fontSize: "18vw",
+    }}
+  >
+    Ask God!
+  </Typography>
+
+  
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Box sx={{ flexGrow: 1, m: 10, maxWidth: "60vw", paddingTop: "70px" }}>
         <div className="header-section">
@@ -70,6 +87,8 @@ const Ask = () => {
           <GetQuote />
       </Box>
     </Box>
+    </>
+    
   );
 };
 

@@ -6,9 +6,26 @@ function DownloadPDF({ data }) {
   const generatePDF = () => {
     const doc = new jsPDF();
 
-    data.forEach(({ question, answer }, index) => {
-      doc.text(`${index + 1}. ${question}`, 10, 10 + index * 30);
-      doc.text(answer, 20, 15 + index * 30);
+    let y = 10;
+    const formattedData = data.map(({ question, answer }, index) => {
+      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 180);
+      const answerLines = doc.splitTextToSize(answer, 180);
+      const lines = Math.max(questionLines.length, answerLines.length);
+      const formattedLines = [];
+      for (let i = 0; i < lines; i++) {
+        const questionLine = questionLines[i] || '';
+        const answerLine = answerLines[i] || '';
+        formattedLines.push({ questionLine, answerLine });
+      }
+      return formattedLines;
+    });
+
+    formattedData.forEach(lines => {
+      lines.forEach(({ questionLine, answerLine }) => {
+        doc.text(questionLine, 10, y);
+        doc.text(answerLine, 20, y + 5);
+        y += 10;
+      });
     });
 
     doc.save("history.pdf");

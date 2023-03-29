@@ -30,6 +30,7 @@ body {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 210px;
 }
 
 .AskGod {
@@ -85,5 +86,23 @@ body {
   }
   100% {
     background-position: 100% 50px;
+  }
+}
+
+@media (min-width: 400px) {
+  .omfg {
+    font-size: 300px;
+  }
+}
+
+@media (min-width: 600px) {
+  .omfg {
+    font-size: 380px;
+  }
+}
+
+@media (min-width: 750px) {
+  .omfg {
+    font-size: 420px;
   }
 }

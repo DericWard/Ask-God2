@@ -1,28 +1,35 @@
-/* eslint-disable */
-import { Card, CardContent, Typography, Box } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Box } from "@mui/system";
 
 const AnswerSection = ({ storedValues }) => {
   return (
-    <>
+    <Box sx={{ display: "flex", justifyContent: "center" }}>
       <div className="answer-container">
-        {storedValues.map((value, index) => {
-          return (
-            <Box sx={{ display: "flex", justifyContent: "center"}}>
-              <Card key={index} sx={{ flexGrow: 1, m: 1, minWidth: "300px", backgroundColor: "transparent", color: "grey"}}>
-                <CardContent>
-                  <Typography variant="body2" component="p">
-                    {value.question}
-                  </Typography>
-                  <Typography variant="h5" component="h2">
-                    {value.answer}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Box>
-          );
-        })}
+        {storedValues.map((value, index) => (
+          <Accordion
+            key={index}
+            sx={{ marginTop: "10px", marginBottom: "10px", width: "50vw" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`panel${index}-content`}
+              id={`panel${index}-header`}
+            >
+              <Typography variant="body2">{value.question}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="body1">{value.answer}</Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </div>
-    </>
+    </Box>
   );
 };
 

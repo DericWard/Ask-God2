@@ -79,10 +79,10 @@ function ContactForm() {
         style={{
           color: "lightblue",
           textAlign: "center",
-          marginTop: "0px",
+          marginTop: "-20px",
           marginBottom: "20px",
           fontFamily: "BigBlue",
-          fontSize: "18vw"
+          fontSize: "18vw",
         }}
       >
         CONTACT GOD!
@@ -96,7 +96,7 @@ function ContactForm() {
           textAlign: "center",
           backgroundColor: "transparent",
           boxShadow: "none",
-          marginTop: "-50px"
+          marginTop: "-50px",
         }}
       >
         <CardContent>
@@ -136,9 +136,10 @@ function ContactForm() {
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleInputChange}
-                  sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" }, 
-                  // backgroundColor: "#FFFFFF",
-                }}
+                  sx={{
+                    "& .MuiInputLabel-root": { color: "#2d7cb2" },
+                    // backgroundColor: "#FFFFFF",
+                  }}
                 />
               </Grid>
               <Grid xs={12} sm={6} item>
@@ -151,9 +152,10 @@ function ContactForm() {
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleInputChange}
-                  sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
-                }}
+                  sx={{
+                    "& .MuiInputLabel-root": { color: "#2d7cb2" },
+                    // backgroundColor: "#FFFFFF",
+                  }}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -167,9 +169,10 @@ function ContactForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
-                }}
+                  sx={{
+                    "& .MuiInputLabel-root": { color: "#2d7cb2" },
+                    // backgroundColor: "#FFFFFF",
+                  }}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -183,9 +186,10 @@ function ContactForm() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
-                }}
+                  sx={{
+                    "& .MuiInputLabel-root": { color: "#2d7cb2" },
+                    // backgroundColor: "#FFFFFF",
+                  }}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -200,9 +204,10 @@ function ContactForm() {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  sx={{ "& .MuiInputLabel-root": { color: "#2d7cb2" },
-                  // backgroundColor: "#FFFFFF",
-                }}
+                  sx={{
+                    "& .MuiInputLabel-root": { color: "#2d7cb2" },
+                    // backgroundColor: "#FFFFFF",
+                  }}
                 />
               </Grid>
               <Grid xs={12} item>

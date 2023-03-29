@@ -14,9 +14,9 @@ const AnswerSection = ({ storedValues }) => {
         {storedValues.map((value, index) => (
           <Accordion
             key={index}
-            sx={{ marginTop: "10px", marginBottom: "10px", width: "50vw" }}
+            sx={{ marginTop: "10px", marginBottom: "10px", width: "50vw", backgroundColor: "#66000000" }}
           >
-            <AccordionSummary
+            <AccordionSummary sx={{marginTop: "20px"}}
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`panel${index}-content`}
               id={`panel${index}-header`}

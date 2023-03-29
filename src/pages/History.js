@@ -20,11 +20,11 @@ function History() {
     <Box sx={{ flexGrow: 1, m: 10, marginTop: "50px", maxWidth: "60%", margin: "auto"}}>
     <div>
       {storedValues.map(({ question, answer }, index) => (
-        <Accordion key={index}>
+        <Accordion key={index} >
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>{question}</Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails >
             <Typography>{answer}</Typography>
           </AccordionDetails>
         </Accordion>

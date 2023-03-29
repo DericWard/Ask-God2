@@ -39,7 +39,7 @@ function GetQuote() {
           sx={{
             fontSize: 20,
             textAlign: "center",
-            color: "white",
+            color: "rgb(45, 124, 178)",
             fontStyle: "italic",
             whiteSpace: "pre-wrap",
             overflow: "visible",

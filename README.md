@@ -1,4 +1,5 @@
-# Ask God
+# Ask God ![Google-Noto-Emoji-Smileys-10082-smiling-face-with-halo 64](https://user-images.githubusercontent.com/50495939/228657764-3067c972-6b93-429f-9783-5812527fed37.png)
+
 Ask God is a React app that integrates OpenAI API, and Quotable.io API to provide a user-friendly and interactive platform for individuals to connect with an AI chatbot. By using Ask God, you can access the wealth of knowledge and expertise that ChatGPT has to offer, and receive intelligent and insightful answers to your questions.
 
 ## User Story

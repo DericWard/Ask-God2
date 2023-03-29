@@ -4,12 +4,11 @@ import React, { useState, useEffect } from "react";
 import { Box, Paper, Typography } from "@mui/material";
 
 // API call component for random quotes
-
 function GetQuote() {
   const [quote, setQuote] = useState("");
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const fetchQuote = () => {
       axios
         .get("https://api.quotable.io/random?author=albert-einstein")
         .then((response) => {
@@ -18,11 +17,14 @@ function GetQuote() {
         .catch((error) => {
           console.log(error);
         });
-    }, 10000);
+    };
+
+    fetchQuote(); // fetch the quote immediately
+
+    const interval = setInterval(fetchQuote, 10000);
 
     return () => clearInterval(interval);
   }, []);
-
   return (
     <Box
       sx={{

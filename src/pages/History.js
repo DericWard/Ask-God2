@@ -9,7 +9,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DownloadPDF from "../assets/components/DownloadPDF";
 import Box from "@mui/material/Box";
-
+import { Button } from "@mui/material";
 
 function History() {
   const [storedValues, setStoredValues] = useState(() => {
@@ -17,10 +17,23 @@ function History() {
     return stored ? JSON.parse(stored) : [];
   });
 
-  return (
+  const handleClearClick = () => {
+    localStorage.removeItem("storedValues");
+    setStoredValues([]);
+  };
 
-    <Box sx={{ flexGrow: 1, m: 10, marginTop: "50px", maxWidth: "60%", margin: "auto"}}>
-            <Typography className="omfg"
+  return (
+    <Box
+      sx={{
+        flexGrow: 1,
+        m: 10,
+        marginTop: "50px",
+        maxWidth: "60%",
+        margin: "auto",
+      }}
+    >
+      <Typography
+        className="omfg"
         variant="h2"
         style={{
           color: "lightblue",
@@ -33,20 +46,35 @@ function History() {
       >
         Save God!
       </Typography>
-    <div>
-      {storedValues.map(({ question, answer }, index) => (
-        <Accordion key={index} sx={{ backgroundColor: "#66000000",marginTop: "10px", marginBottom: "10px" }} >
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>{question}</Typography>
-          </AccordionSummary>
-          <AccordionDetails >
-            <Typography>{answer}</Typography>
-          </AccordionDetails>
-        </Accordion>
-        
-      ))}
-      <DownloadPDF data={storedValues} />
-    </div>
+      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+          <Box>
+            <DownloadPDF data={storedValues} />
+          </Box>
+          <Box>
+            <Button variant="contained" onClick={handleClearClick} sx={{backgroundColor: "#2d7cb2", color: "white"}}>
+              Clear History
+            </Button>
+          </Box>
+        </Box>
+        {storedValues.map(({ question, answer }, index) => (
+          <Accordion
+            key={index}
+            sx={{
+              backgroundColor: "#66000000",
+              marginTop: "10px",
+              marginBottom: "10px",
+            }}
+          >
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>{question}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>{answer}</Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </Box>
     </Box>
   );
 }

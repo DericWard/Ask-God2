@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { useState } from "react";
 import {
   Accordion,
@@ -53,6 +52,11 @@ function History() {
             justifyContent: "space-between",
             alignItems: "center",
             marginBottom: "10px",
+            // add media query to add gap between buttons on mobile mode
+            "@media (max-width: 600px)": {
+              flexDirection: "column",
+              gap: "10px",
+            },
           }}
         >
           <Box sx={{ minHeight: "48px" }}>
@@ -79,6 +83,7 @@ function History() {
               backgroundColor: "#66000000",
               marginTop: "10px",
               marginBottom: "10px",
+              color: "#2D7CB2",
             }}
           >
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>

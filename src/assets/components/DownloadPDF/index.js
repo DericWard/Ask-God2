@@ -8,8 +8,8 @@ function DownloadPDF({ data }) {
 
     let y = 10;
     const formattedData = data.map(({ question, answer }, index) => {
-      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 180);
-      const answerLines = doc.splitTextToSize(answer, 180);
+      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 150);
+      const answerLines = doc.splitTextToSize(answer, 150);
       const lines = Math.max(questionLines.length, answerLines.length);
       const formattedLines = [];
       for (let i = 0; i < lines; i++) {

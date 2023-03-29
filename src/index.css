@@ -20,12 +20,12 @@ body {
 }
 
 @font-face {
-  font-family: 'BigBlue';
-  src: url('./assets/fonts/BigParty4Blue-0f5b.woff2') format('woff2');
+  font-family: "BigBlue";
+  src: url("./assets/fonts/BigParty4Blue-0f5b.woff2") format("woff2");
 }
 
 .omfg {
-  font-family: 'BigBlue';
+  font-family: "BigBlue";
   color: darkgrey;
   text-align: center;
   margin-top: 0px;
@@ -55,7 +55,7 @@ body {
 .answer {
   color: darkslategray;
   font-size: larger;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes drop-ask {

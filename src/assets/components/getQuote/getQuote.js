@@ -30,7 +30,7 @@ function GetQuote() {
         flexDirection: "column",
         justifyContent: "center",
         // width: "60vw",
-        marginTop: "100px",
+        marginTop: "140px",
         // opacity: "0.5"
       }}
     >

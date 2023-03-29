@@ -20,15 +20,15 @@ function History() {
   return (
 
     <Box sx={{ flexGrow: 1, m: 10, marginTop: "50px", maxWidth: "60%", margin: "auto"}}>
-            <Typography
+            <Typography className="omfg"
         variant="h2"
         style={{
           color: "lightblue",
           textAlign: "center",
-          marginTop: "-60px",
+          marginTop: "-50px",
           marginBottom: "0px",
           fontFamily: "BigBlue",
-          fontSize: "18vw",
+          fontSize: "17vw",
         }}
       >
         Save God!

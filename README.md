@@ -11,6 +11,9 @@ The app's intuitive interface makes it easy to navigate and use, while its robus
 ## Features
 Search field, local storage for responses, and abilty to download responses as a pdf, contact form
 
+## Screenshots:
+![image](https://user-images.githubusercontent.com/50495939/228522995-2e1a400e-a301-4a7c-bea1-0a52ad1895a7.png)
+
 ## Tools
 Node.js, React.js, npm.js, Axios,  MUI, FileServer.js, Email.js
 

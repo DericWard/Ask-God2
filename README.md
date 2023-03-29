@@ -12,18 +12,22 @@ The app's intuitive interface makes it easy to navigate and use, while its robus
 Search field, local storage for responses, and abilty to download responses as a pdf, contact form
 
 ##Tools
-Node.js, React.js, npm.js, Axios,  MUI, FileServer.js, Email.js
+Node.js, React.js, npm.js, Axios, MUI, FileServer.js, Email.js, Logic Pro X
 
 ##View Project
 
 [include video link here]
 
 ##Future Development Plans
-[....]
+
+1. Answer read out with an AI voice via text to speech
+2. Ability to input question as voice-to-text
+3. Option to choose your "god", with an array of well-known avatars
+4. Option to change language
 
 ##Credits
 
-API - OpenAI, Quotable.io
+API - OpenAI, api.quotable.io
 
 Other Tools - FontSpace, Puppeteer, Adobe Illustrator, Photoshop
 
@@ -58,4 +62,4 @@ Create a pull request.
 Ask God was created by The Four Horsemen of the Ai-apocalypse: Andrea Gates, Henry Green, Marta Milewczyk and Deric Ward.
 
 ##License
-Ask God is licensed under the [.....].
+Ask God is licensed under the MIT License.

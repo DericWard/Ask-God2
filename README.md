@@ -47,8 +47,9 @@ Search field, local storage for responses, and abilty to download responses as a
 
 1. Answer read out with an AI voice via text to speech
 2. Ability to input question as voice-to-text
-3. Option to choose your "god", with an array of well-known avatars
-4. Option to change language
+3. Choose which type of AI model to use
+4. Option to choose your "god", with an array of well-known avatars
+5. Option to change language
 
 ## Credits
 

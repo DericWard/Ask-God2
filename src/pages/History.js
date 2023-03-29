@@ -35,11 +35,11 @@ function History() {
       </Typography>
     <div>
       {storedValues.map(({ question, answer }, index) => (
-        <Accordion key={index}>
+        <Accordion key={index} >
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>{question}</Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails >
             <Typography>{answer}</Typography>
           </AccordionDetails>
         </Accordion>

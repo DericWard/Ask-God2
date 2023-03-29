@@ -8,27 +8,38 @@ To get started, simply enter your query in the provided text box, and let the ap
 
 The app's intuitive interface makes it easy to navigate and use, while its robust features ensure that you get the most out of your chatbot experience. Whether you're seeking information, advice, or just some interesting conversation, put your faith in Ask God. [Something about local storage here...]
 
-## Features
-Search field, local storage for responses, and abilty to download responses as a pdf, contact form
+
+##Features
+Search field, local storage for responses, and abilty to download responses as a pdf, contact form, quotes by Albert Einstein
+
+##Tools
+Node.js, React.js, npm.js, Axios, MUI, FileServer.js, Email.js, Logic Pro X, ChatGPT
+
+
 
 ## Screenshots:
 ![image](https://user-images.githubusercontent.com/50495939/228523223-acfe61ca-2456-46cc-8a0c-5202f3998dab.png)
 
-## Tools
-Node.js, React.js, npm.js, Axios,  MUI, FileServer.js, Email.js
 
 ## View Project
 
 [include video link here]
 
-## Future Development Plans
-[....]
+
+##Future Development Plans
+
+1. Answer read out with an AI voice via text to speech
+2. Ability to input question as voice-to-text
+3. Option to choose your "god", with an array of well-known avatars
+4. Option to change language
+
+
 
 ## Credits
 
-API - OpenAI, Quotable.io
+API - OpenAI, api.quotable.io
 
-Other Tools - FontSpace, Puppeteer, Adobe Illustrator, Photoshop
+Other Tools - FontSpace, Adobe Illustrator, Photoshop
 
 ## Installation
 To install and run the app locally, follow these steps:
@@ -57,8 +68,9 @@ Make your changes and commit them: git commit -m "Add some feature"
 Push to the branch: git push origin my-new-branch
 Create a pull request.
 
-## Credits
+
+##Authors
 Ask God was created by The Four Horsemen of the Ai-apocalypse: Andrea Gates, Henry Green, Marta Milewczyk and Deric Ward.
 
-## License
-Ask God is licensed under the [.....].
+##License
+Ask God is licensed under the MIT License.

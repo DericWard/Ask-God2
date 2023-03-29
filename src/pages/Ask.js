@@ -76,7 +76,7 @@ const Ask = () => {
 
   
     <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Box sx={{ flexGrow: 1, m: 10, maxWidth: "60vw", paddingTop: "0px" }}>
+      <Box sx={{ flexGrow: 1, m: 10, maxWidth: "60vw"}}>
         <div className="header-section">
           
 

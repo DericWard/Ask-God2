@@ -3,12 +3,14 @@ import Sound from "../assets/sound.wav";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+//audio
 function Home() {
   const playSound = () => {
     const audio = new Audio(Sound);
     audio.play();
   };
 
+  //play sound on load
   useEffect(() => {
     playSound();
   }, []);

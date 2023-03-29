@@ -10,12 +10,14 @@ import DownloadPDF from "../assets/components/DownloadPDF";
 import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 
+//using useState to retrieve stored searches
 function History() {
   const [storedValues, setStoredValues] = useState(() => {
     const stored = localStorage.getItem("storedValues");
     return stored ? JSON.parse(stored) : [];
   });
 
+  //clear button function
   const handleClearClick = () => {
     localStorage.removeItem("storedValues");
     setStoredValues([]);

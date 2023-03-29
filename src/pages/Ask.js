@@ -65,7 +65,7 @@ const Ask = () => {
     style={{
       color: "lightblue",
       textAlign: "center",
-      marginTop: "-50px",
+      marginTop: "-70px",
       marginBottom: "0px",
       fontFamily: "BigBlue",
       fontSize: "18vw",

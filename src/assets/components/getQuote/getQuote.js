@@ -30,7 +30,7 @@ function GetQuote() {
         flexDirection: "column",
         justifyContent: "center",
         // width: "60vw",
-        marginTop: "100px",
+        marginTop: "140px",
         // opacity: "0.5"
       }}
     >
@@ -39,7 +39,7 @@ function GetQuote() {
           sx={{
             fontSize: 20,
             textAlign: "center",
-            color: "white",
+            color: "rgb(45, 124, 178)",
             fontStyle: "italic",
             whiteSpace: "pre-wrap",
             overflow: "visible",

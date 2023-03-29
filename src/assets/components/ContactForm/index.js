@@ -9,6 +9,7 @@ import { TextField } from "@mui/material";
 import emailjs from "emailjs-com";
 import soundFile from "../../sound.wav";
 
+//contact form construction, using useState
 function ContactForm() {
   const [formData, setFormData] = useState({
     subject: "",
@@ -19,12 +20,14 @@ function ContactForm() {
     message: "",
   });
 
+  //audio
   const [audio, setAudio] = useState(null);
 
   useEffect(() => {
     setAudio(new Audio(soundFile));
   }, []);
 
+  //input change
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevState) => ({
@@ -33,12 +36,14 @@ function ContactForm() {
     }));
   };
 
+  //play sound
   const playSound = () => {
     if (audio) {
       audio.play();
     }
   };
 
+  //submit to emailjs
   const handleSubmit = (event) => {
     event.preventDefault();
 

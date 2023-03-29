@@ -12,7 +12,6 @@ function GetQuote() {
     const interval = setInterval(() => {
       axios
         .get("https://api.quotable.io/random?author=albert-einstein")
-
         .then((response) => {
           setQuote(`${response.data.content}`);
         })
@@ -30,24 +29,41 @@ function GetQuote() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        width: "60vw",
-        marginTop: "200px",
+        // width: "60vw",
+        marginTop: "100px",
         // opacity: "0.5"
       }}
     >
-      <Paper sx={{ backgroundColor: "#66000000", boxShadow: "none" }}>
+      <Paper sx={{ backgroundColor: "#66000000", boxShadow: "none", minWidth: "100%" }}>
         <Typography
           sx={{
             fontSize: 20,
             textAlign: "center",
-            color: "#155178",
+            color: "white",
             fontStyle: "italic",
+            whiteSpace: "pre-wrap",
+            overflow: "visible",
+            animation: "slideRightToLeft 15s linear infinite",
+            width: "100%",
+            display: "inline-block",
           }}
           variant="h3"
         >
           {quote}
         </Typography>
       </Paper>
+      {/* <style>
+        {`
+          @keyframes slideRightToLeft {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+        `}
+      </style> */}
     </Box>
   );
 }

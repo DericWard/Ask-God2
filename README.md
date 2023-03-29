@@ -9,10 +9,10 @@ To get started, simply enter your query in the provided text box, and let the ap
 The app's intuitive interface makes it easy to navigate and use, while its robust features ensure that you get the most out of your chatbot experience. Whether you're seeking information, advice, or just some interesting conversation, put your faith in Ask God. [Something about local storage here...]
 
 ##Features
-Search field, local storage for responses, and abilty to download responses as a pdf, contact form
+Search field, local storage for responses, and abilty to download responses as a pdf, contact form, quotes by Albert Einstein
 
 ##Tools
-Node.js, React.js, npm.js, Axios, MUI, FileServer.js, Email.js, Logic Pro X
+Node.js, React.js, npm.js, Axios, MUI, FileServer.js, Email.js, Logic Pro X, ChatGPT
 
 ##View Project
 
@@ -29,7 +29,7 @@ Node.js, React.js, npm.js, Axios, MUI, FileServer.js, Email.js, Logic Pro X
 
 API - OpenAI, api.quotable.io
 
-Other Tools - FontSpace, Puppeteer, Adobe Illustrator, Photoshop
+Other Tools - FontSpace, Adobe Illustrator, Photoshop
 
 ##Installation
 To install and run the app locally, follow these steps:
@@ -58,7 +58,7 @@ Make your changes and commit them: git commit -m "Add some feature"
 Push to the branch: git push origin my-new-branch
 Create a pull request.
 
-##Credits
+##Authors
 Ask God was created by The Four Horsemen of the Ai-apocalypse: Andrea Gates, Henry Green, Marta Milewczyk and Deric Ward.
 
 ##License

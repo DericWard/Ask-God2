@@ -10,35 +10,32 @@ function DownloadPDF({ data }) {
     const doc = new jsPDF();
     const pageHeight = doc.internal.pageSize.height;
 
-    let newY = y; // use a local variable to track the current y position
-
     data.map(({ question, answer }, index) => {
       // Check if content exceeds current page height
-      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 180);
-      const answerLines = doc.splitTextToSize(answer, 180);
+      const questionLines = doc.splitTextToSize(`${index + 1}. ${question}`, 150);
+      const answerLines = doc.splitTextToSize(answer, 150);
       const lines = Math.max(questionLines.length, answerLines.length);
       const contentHeight = lines * 10;
-      if (newY + contentHeight > pageHeight - 10) {
+      if (y + contentHeight > pageHeight - 10) {
         doc.addPage();
-        newY = 10; // reset the local variable when a new page is added
+        setY(10);
       }
 
       // Add space between each question-answer pair
       if (index > 0) {
-        newY += 10; // increment the local variable, not the state variable
+        setY(y + 10);
       }
 
       // Format and render question-answer pair
       for (let i = 0; i < lines; i++) {
         const questionLine = questionLines[i] || '';
         const answerLine = answerLines[i] || '';
-        doc.text(questionLine, 10, newY);
-        doc.text(answerLine, 20, newY + 5);
-        newY += 10; // increment the local variable, not the state variable
+        doc.text(questionLine, 10, y);
+        doc.text(answerLine, 20, y + 5);
+        setY(y + 10);
       }
     });
 
-    setY(newY); // update the state variable after the loop is finished
     doc.save("history.pdf");
   };
 

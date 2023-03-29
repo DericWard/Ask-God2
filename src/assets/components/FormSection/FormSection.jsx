@@ -53,7 +53,7 @@ const FormSection = ({ generateResponse }) => {
           className="btn"
           style={{
             fontSize: "18px",
-            color: "lightgray",
+            color: "white",
             backgroundColor: "#2d7cb2",
             marginTop: "20px",
           }}

@@ -46,17 +46,32 @@ function History() {
       >
         Save God!
       </Typography>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-          <Box>
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: "10px",
+          }}
+        >
+          <Box sx={{ minHeight: "48px" }}>
             <DownloadPDF data={storedValues} />
           </Box>
-          <Box>
-            <Button variant="contained" onClick={handleClearClick} sx={{backgroundColor: "#2d7cb2", color: "white"}}>
+          <Box sx={{ minHeight: "48px" }}>
+            <Button
+              variant="contained"
+              onClick={handleClearClick}
+              sx={{
+                backgroundColor: "#2d7cb2",
+                color: "white",
+              }}
+            >
               Clear History
             </Button>
           </Box>
         </Box>
+
         {storedValues.map(({ question, answer }, index) => (
           <Accordion
             key={index}
@@ -80,5 +95,3 @@ function History() {
 }
 
 export default History;
-
-// rbg(45, 124, 78)

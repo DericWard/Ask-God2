@@ -8,48 +8,73 @@ To get started, simply enter your query in the provided text box, and let the ap
 
 The app's intuitive interface makes it easy to navigate and use, while its robust features ensure that you get the most out of your chatbot experience. Whether you're seeking information, advice, or just some interesting conversation, put your faith in Ask God. [Something about local storage here...]
 
+ ## Table of contents
 
-##Features
+  - [Features](#features)
+  - [Screenshots](#screenshot)
+  - [Tools](#tools)
+  - [View](#view)
+  - [Future Development Plans](#futuredevelopmentplans)
+  - [Credits](#credits)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Authors](#authors)
+  - [License](#license)
+
+
+## Features
 Search field, local storage for responses, and abilty to download responses as a pdf, contact form, quotes by Albert Einstein
-
-##Tools
-Node.js, React.js, npm.js, Axios, MUI, FileServer.js, Email.js, Logic Pro X, ChatGPT
-
-
 
 ## Screenshots:
 ![image](https://user-images.githubusercontent.com/50495939/228523223-acfe61ca-2456-46cc-8a0c-5202f3998dab.png)
 
+## Tools
 
-## View Project
+- <a href="https://react.dev/">React.js</a>, 
+- <a href="https://nodejs.org/en">Node.js</a>, 
+- <a href="https://www.npmjs.com/">npm.js</a>, 
+- <a href="https://axios-http.com/">Axios</a>, 
+- <a href="https://mui.com/">Google MUI</a>, 
+- <a href="https://www.npmjs.com/package/file-server">FileServer.js</a>, 
+- <a href="https://www.emailjs.com/">Email.js</a>
+
+## View
 
 [include video link here]
 
-
-##Future Development Plans
+## Future Development Plans
 
 1. Answer read out with an AI voice via text to speech
 2. Ability to input question as voice-to-text
 3. Option to choose your "god", with an array of well-known avatars
 4. Option to change language
 
-
-
 ## Credits
 
-API - OpenAI, api.quotable.io
-
-Other Tools - FontSpace, Adobe Illustrator, Photoshop
+- <a href="https://openai.com/">OpenAI</a>
+- <a href="https://github.com/lukePeavey/quotable">Quotable</a>
+- <a href="https://www.fontspace.com/bigparty4blue-font-f85429">FontSpace</a>
+- <a href="https://www.adobe.com/uk/products/illustrator.html">Adobe Illustrator</a>
+- <a href="https://www.adobe.com/uk/products/photoshop.html">Photoshop</a>
 
 ## Installation
 To install and run the app locally, follow these steps:
 
-Clone the repository from GitHub: git clone https://github.com/DericWard/Ask-God2/
+- Clone the repository from GitHub: 
 
-Navigate to the project directory: cd Ask-God2
-Install dependencies: npm install
-Start the app: npm start
-Open http://localhost:3000 in your browser to view the app.
+            $ git clone https://github.com/DericWard/Ask-God2/
+- Navigate to the project directory: cd Ask-God2
+- Install dependencies: 
+
+            $ npm install
+- Start the app: 
+
+            $ npm start
+- Open in your browser to view the app:
+
+            $ http://localhost:3000
+
 Note: You will need to have Node.js and npm installed on your machine to run this app.
 
 ## Usage
@@ -59,18 +84,18 @@ What's more, users can store their chosen dialogues with "God" and download them
 
 Finally, if users have comments, criticisms or suggestions on how "God" might improve, the app features a contact form for just this purpose.
 
-## Contributing
-If you would like to contribute to Ask God, please follow these steps:
+## Contribution
+If you would like to contribute to Ask God, please visit <a href="https://www.contributor-covenant.org/">Contributor Covenant</a> to check contribution guidelines.
 
-Fork the repository.
-Create a new branch for your changes: git checkout -b my-new-branch
-Make your changes and commit them: git commit -m "Add some feature"
-Push to the branch: git push origin my-new-branch
-Create a pull request.
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 
-##Authors
-Ask God was created by The Four Horsemen of the Ai-apocalypse: Andrea Gates, Henry Green, Marta Milewczyk and Deric Ward.
+## Authors
+Ask God was created by The Four Horsemen of the Ai-apocalypse Team: 
+- <a href="https://github.com/Andrea-Gates">Andrea Gates</a>, 
+- <a href="https://github.com/HenryJamesGreen">Henry Green</a>, 
+- <a href="https://github.com/MartaMilewczyk">Marta Milewczyk</a>,
+- <a href="https://github.com/DericWard">Deric Ward</a>
 
-##License
-Ask God is licensed under the MIT License.
+## License
+Ask God is covered by [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

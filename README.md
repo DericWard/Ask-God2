@@ -5,9 +5,9 @@ Ask God is a React app that integrates OpenAI API, and Quotable.io API to provid
 ## User Story
 As a user, I want to be able to engage in a personalized conversation with an AI-powered chatbot, so that I can receive relevant and informative responses to my inquiries.
 
-To get started, simply enter your query in the provided text box, and let the app do the rest. The chatbot will process your input and generate a relevant and informative response based on its advanced language understanding capabilities. With Ask God, you can engage in meaningful conversations with ChatGPT on any topic, and while you wait for this wisdom to generate, random quotes from worthy people will appear on the search screen for your entertainment and enlightenment.
+To get started, simply enter your query in the provided text box, and let the app do the rest. The chatbot will process your input and generate a relevant and informative response based on its advanced language understanding capabilities. With Ask God, you can engage in meaningful conversations with ChatGPT on any topic, and while you wait for this wisdom to generate, random quotes from worthy people will appear on the search screen for your entertainment and enlightenment. And when you've received enlightment, you can save your answers to local storage and even download the word of the Omniscient (as a pdf).
 
-The app's intuitive interface makes it easy to navigate and use, while its robust features ensure that you get the most out of your chatbot experience. Whether you're seeking information, advice, or just some interesting conversation, put your faith in Ask God. [Something about local storage here...]
+The app's intuitive interface makes it easy to navigate and use, while its robust features ensure that you get the most out of your chatbot experience. Whether you're seeking information, advice, or just some interesting conversation, put your faith in Ask God.
 
  ## Table of contents
 
@@ -42,7 +42,7 @@ Search field, local storage for responses, and abilty to download responses as a
 
 ## View
 
-[include video link here]
+To see Ask God in action, go to https://youtu.be/y50udiSUdtY/
 
 ## Future Development Plans
 

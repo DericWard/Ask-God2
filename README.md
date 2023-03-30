@@ -27,7 +27,7 @@ The app's intuitive interface makes it easy to navigate and use, while its robus
 ## Features
 Search field, local storage for responses, and abilty to download responses as a pdf, contact form, quotes by Albert Einstein
 
-## Screenshots:
+## Screenshot:
 ![image](https://user-images.githubusercontent.com/50495939/228523223-acfe61ca-2456-46cc-8a0c-5202f3998dab.png)
 
 ## Tools

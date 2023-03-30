@@ -23,12 +23,27 @@ body {
 @font-face {
   font-family: "BigBlue";
   src: url("../public/fonts/BigParty4Blue-0f5b.woff2") format("woff2");
+  src: url("../public/fonts/BigParty4Blue-2575.woff") format("woff");
+}
+body {
+  font-family: "BigBlue", sans-serif;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Crapple';
   src: url("../public/fonts/Crapple.ttf") format("ttf");
+} */
 
+@media only screen and (max-device-width: 820px) and (device-aspect-ratio: 2/3) and (-webkit-min-device-pixel-ratio: 2) {
+  @font-face {
+    font-family: 'Crapple';
+    src: url("../public/fonts/Crapple.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-family: "Crapple", sans-serif;
+  }
 }
 
 .omfg {

@@ -22,7 +22,13 @@ body {
 
 @font-face {
   font-family: "BigBlue";
-  src: url("./assets/fonts/BigParty4Blue-0f5b.woff2") format("woff2");
+  src: url("../public/fonts/BigParty4Blue-0f5b.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Crapple';
+  src: url("../public/fonts/Crapple.ttf") format("ttf");
+
 }
 
 .omfg {

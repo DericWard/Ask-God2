@@ -101,4 +101,4 @@ Ask God was created by The Four Horsemen of the Ai-Apocalypse team:
 
 ## License
 Ask God is licensed under the following:
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

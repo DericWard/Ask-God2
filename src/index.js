@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '../src/assets/fonts/BigParty4Blue-0f5b.woff2';
+import '../src/assets/fonts/BigParty4Blue-2575.woff';
+import '../src/assets/fonts/Crapple.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

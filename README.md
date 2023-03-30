@@ -93,7 +93,7 @@ If you would like to contribute to Ask God, please visit <a href="https://www.co
 
 
 ## Authors
-Ask God was created by The Four Horsemen of the Ai-Apocalypse Team: 
+Ask God was created by The Four Horsemen of the Ai-Apocalypse team: 
 - <a href="https://github.com/Andrea-Gates">Andrea Gates</a>, 
 - <a href="https://github.com/HenryJamesGreen">Henry Green</a>, 
 - <a href="https://github.com/MartaMilewczyk">Marta Milewczyk</a>,
